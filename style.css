@@ -1,0 +1,86 @@
+:root {
+  --color-light-1: #fff;
+  --color-light-2: #e8e8e8;
+  --color-light-3: #d8ebe4;
+  --color-dark: #6b011f;
+  --color-button: #0033cc;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-light-2);
+}
+
+h2 {
+  margin: 1em;
+  font-size: 2rem;
+  text-align: center;
+  color: #693c72;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 2.9em;
+}
+
+.box1,
+.box2 {
+  border-right: 3px solid var(--color-dark);
+  border-bottom: 3px solid var(--color-dark);
+}
+
+.box4,
+.box5,
+.box8,
+.box7 {
+  border-right: 3px solid var(--color-dark);
+}
+
+.box3,
+.box4,
+.box5,
+.box6 {
+  border-bottom: 3px solid var(--color-dark);
+}
+
+.winner {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-button);
+}
+
+.restart {
+  width: 5rem;
+  height: 2rem;
+  background-color: #007580;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  color: var(--color-light-3);
+  cursor: pointer;
+}
